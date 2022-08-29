@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Armincms\\Fields\\FieldServiceProvider"
+                "Armincms\\Fields\\ManyToManyServiceProvider"
             ]
         }
     },

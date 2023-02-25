@@ -37,7 +37,7 @@ class ManyToManyServiceProvider extends ServiceProvider
         }
 
         \Route::middleware(['nova'])
-                ->prefix('nova-api/armincms') 
+                ->prefix('nova-vendor/armincms') 
                 ->namespace(__NAMESPACE__.'\\Http\\Controllers')
                 ->group(__DIR__.'/../routes/api.php');
     }

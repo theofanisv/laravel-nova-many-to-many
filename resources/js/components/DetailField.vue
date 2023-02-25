@@ -110,7 +110,7 @@ export default {
       async getPivotFields(resource) {   
         await Nova.request()
           .get(
-            `/nova-api/armincms/${this.resourceName}/pivot-fields/${this.field.resourceName}`,
+            `/nova-vendor/armincms/${this.resourceName}/pivot-fields/${this.field.resourceName}`,
             {
               params: { 
                 resourceId: this.resourceId,

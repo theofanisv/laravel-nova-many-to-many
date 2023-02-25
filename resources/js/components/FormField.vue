@@ -338,7 +338,7 @@ export default {
 
       validateRequest(resource) {
         return Nova.request().post(
-            `/nova-api/armincms/${this.resourceName}/pivots-validate/${this.field.resourceName}`,
+            `/nova-vendor/armincms/${this.resourceName}/pivots-validate/${this.field.resourceName}`,
             this.attachmentFormData,
             {
               params: {
@@ -391,7 +391,7 @@ export default {
       getAvailableResources() { 
         Nova.request()
           .get(
-            `/nova-api/armincms/${this.resourceName}/attachable/${this.field.resourceName}`,
+            `/nova-vendor/armincms/${this.resourceName}/attachable/${this.field.resourceName}`,
             {
               params: {
                 search: this.search,
@@ -410,7 +410,7 @@ export default {
       getAttachedResources() { 
         Nova.request()
           .get(
-            `/nova-api/armincms/${this.resourceName}/attached/${this.field.resourceName}`,
+            `/nova-vendor/armincms/${this.resourceName}/attached/${this.field.resourceName}`,
             {
               params: {
                 field: this.field.attribute,
@@ -435,7 +435,7 @@ export default {
       async getPivotFields(resource) {   
         await Nova.request()
           .get(
-            `/nova-api/armincms/${this.resourceName}/pivot-fields/${this.field.resourceName}`,
+            `/nova-vendor/armincms/${this.resourceName}/pivot-fields/${this.field.resourceName}`,
             {
               params: {
                 field: this.field.attribute, 
